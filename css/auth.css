@@ -104,6 +104,17 @@ color: #000000;
     transition: .5s;
 }
 
+.msg {
+  font-family: 'Open Sans', sans-serif;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1.5px solid #F7CAC9;
+  border-radius: 7px;
+  text-align: center;
+  font-weight: 550;
+  background:#faeeee
+} 
+
 button:hover {
     background-position: right center;
 }

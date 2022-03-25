@@ -1,7 +1,14 @@
+<?php   
+    session_start();
+    if ($_SESSION['user']) {
+        header('Location: qr.php');
+    }
+    ?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8 " />
+    
     <title>Авторизация</title>
     <link rel="stylesheet" href="css/auth.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,14 +17,20 @@
 </head>
 <body>
     <div class="aunth">
-    <form action="qr.html" method="">
-        <a href="./index.html"><img src="img/ami.png"></a>
+    <form action="inc/aunth.php" method="post">
+        <a href="./index.php"><img src="img/ami.png"></a>
         <h1>Добро пожаловать!</h1>
         <label>Логин</label>
         <input type="text" name="login" placeholder="Введите свой логин">
         <label>Пароль</label>
         <input type="password" name="password" placeholder="Введите свой пароль">
-        <button type="submit">Войти</button>
+        <button type="submit">Войти</button> 
+        <?php 
+            if ($_SESSION['message']){
+                echo '<p class="msg"> ' . $_SESSION['message'] . ' </p>';
+            }
+            unset($_SESSION['message']);
+            ?>
     </form>
     </div>
 </body>
