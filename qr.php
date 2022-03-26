@@ -45,7 +45,7 @@
       </div>
       <canvas id="qr-canvas" width="800" height="600" style="width: 800px; height: 600px;"></canvas>
       <script type="text/javascript">load();</script>
-      <a href="./qqq.php" button type="button" class="button">Ввнести вручную</button></a>
+      <a href="./qqq.php" class="button">Ввнести вручную</button></a>
   </form>
   </div>
 </body>

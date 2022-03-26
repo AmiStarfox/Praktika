@@ -17,7 +17,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
 <body>
-
   <div class="qr" id="qr">
     <script type="text/javascript">
       function openForm() {
@@ -42,11 +41,17 @@ function closeForm() {
       <input type="text" placeholder="Обычно 3-5 цифр, в конце чека">
       <label>ФП или ФПД</label>
       <input type="text" placeholder="Обычно 8-10 цифр, в конце чека">
-      <label id="qqq" a href="./index.php">Как найти информацию на чеке</a></label>
-        <!-- <img src="img/cek.png"/> -->
-        
-      </span></a>
-      <button class="button">Внести</button>
+ <button button type="button" id="qqq" src="img/cek.png">Как найти информацию на чеке</button>
+<script src="js/webqr.js"></script>
+<script>
+    (function() {
+        var modal = $modal();
+        document.querySelector('#qqq').addEventListener('click', function() {
+            modal.show();
+        });
+    })();
+</script>
+<button button type="button" class="button">Внести</button></button>
   </form>
   </div>
 </body>
