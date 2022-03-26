@@ -41,7 +41,7 @@ function closeForm() {
       <input type="text" placeholder="Обычно 3-5 цифр, в конце чека">
       <label>ФП или ФПД</label>
       <input type="text" placeholder="Обычно 8-10 цифр, в конце чека">
- <button button type="button" id="qqq" src="img/cek.png">Как найти информацию на чеке</button>
+ <button button type="button" id="qqq" src="img/cek.jpeg">Как найти информацию на чеке</button>
 <script src="js/webqr.js"></script>
 <script>
     (function() {

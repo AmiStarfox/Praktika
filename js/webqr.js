@@ -263,6 +263,8 @@ $modal = function(options) {
         return elemModal;
     }
 
+
+
     function _showModal() {
         if (!_destroyed && !_hiding) {
             _elemModal.classList.add('modal__show');
