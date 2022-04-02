@@ -20,7 +20,7 @@
   <div class="qr" id="qr">
   <link rel="stylesheet" href="css/qr.css">
   <form action="qr.php">
-    <a href="inc/logout.php"><img class = "logo" src="img/ami.png"></a>
+    <a href="inc/logout.php"><img class = "logo" src="img/am.png"></a>
     <fieldset><h1>Отсканируйте код с помощью камеры</h1></fieldset>
     <div id="main">
       <div id="mainbody" style="display: inline;">

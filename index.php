@@ -18,7 +18,7 @@
 <body>
     <div class="aunth">
     <form action="inc/aunth.php" method="post">
-        <a href="./index.php"><img src="img/ami.png"></a>
+        <a href="./index.php"><img src="img/am.png"></a>
         <h1>Добро пожаловать!</h1>
         <label>Логин</label>
         <input type="text" name="login" placeholder="Введите свой логин">

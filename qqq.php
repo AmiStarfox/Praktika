@@ -28,7 +28,7 @@ function closeForm() {
       </script>
   <link rel="stylesheet" href="css/qr.css">
   <form action="qr.php">
-    <a href="inc/logout.php"><img class = "logo" src="img/ami.png"></a>
+    <a href="inc/logout.php"><img class = "logo" src="img/am.png"></a>
     <fieldset><h1>Введите данные кода вручную</h1></fieldset>
     <form action="">
       <label>Дата и время</label>
