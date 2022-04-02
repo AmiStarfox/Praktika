@@ -41,7 +41,13 @@ function closeForm() {
       <input type="text" placeholder="Обычно 3-5 цифр, в конце чека">
       <label>ФП или ФПД</label>
       <input type="text" placeholder="Обычно 8-10 цифр, в конце чека">
- <button button type="button" id="qqq" src="img/cek.jpeg">Как найти информацию на чеке</button>
+      <div class="container"></div>
+      <a class="tooltip" button type="button" id="qqq" href="#">Как найти информацию на чеке<span><img src="img/cek.jpeg" /></span></a>
+  <!-- <div class="title"><img src="img/cek.jpeg" alt="img"><span>Как найти информацию на чеке</span></div>
+  <div class="bottom-text active">
+    </div>
+</div>
+      <button button type="button" id="qqq" src="img/cek.jpeg">Как найти информацию на чеке</button>
 <script src="js/webqr.js"></script>
 <script>
     (function() {
@@ -50,7 +56,7 @@ function closeForm() {
             modal.show();
         });
     })();
-</script>
+</script> -->
 <button button type="button" class="button">Внести</button></button>
   </form>
   </div>

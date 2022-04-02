@@ -24,8 +24,8 @@
         <input type="text" name="login" placeholder="Введите свой логин">
         <label>Пароль</label>
         <input type="password" name="password" placeholder="Введите свой пароль">
-        <label>Изображение профиля</label>
-        <input type="file" name="avatar">
+        <!-- <label>Изображение профиля</label>
+        <input type="file" name="avatar"> -->
         <div class="form-check">
       <input type="checkbox" class="form-check-input" id="dropdownCheck">
       <label class="form-check-label" for="dropdownCheck">

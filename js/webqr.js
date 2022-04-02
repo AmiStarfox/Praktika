@@ -312,3 +312,6 @@ $modal = function(options) {
         }
     }
 };
+$(".container").click(function() {
+    $(".bottom-text").toggleClass(active);
+});

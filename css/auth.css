@@ -3,33 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
-@media  screen and (min-width: 525px) {
+
+@media screen and (min-width: 525px) {
     .header-pc {
-      display: block
+        display: block
     }
     .header-mobile {
-      display: none
+        display: none
     }
-  }
-  
-  @media  screen and (max-width: 525px) {
+}
+
+@media screen and (max-width: 525px) {
     .header-pc {
-      display: none
+        display: none
     }
     .header-mobile {
-      display: block
+        display: block
     }
-  }
+}
 
 body {
     background: linear-gradient(to bottom, #F7CAC9, #E58D8B);
-    background-size: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 .aunth {
@@ -56,8 +55,7 @@ h1 {
     font-size: 36px;
     line-height: 53px;
     letter-spacing: 0.414118px;
-
-color: #000000;
+    color: #000000;
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -80,18 +78,17 @@ input {
 }
 
 button {
-font-family: 'Oswald';
-font-style: normal;
-font-weight: 700;
-font-size: 15px;
-line-height: 22px;
-text-align: center;
-letter-spacing: 0.32px;
-text-transform: uppercase;
-
-color: #000000;
-
-    cursor: pointer;;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    color: #000000;
+    cursor: pointer;
+    ;
     padding: 15px 20px;
     margin: 10px 20px;
     border-radius: 10px;
@@ -99,25 +96,32 @@ color: #000000;
     text-transform: uppercase;
     letter-spacing: 2px;
     background: conic-gradient(from 180deg at 50% 50%, rgba(247, 202, 201, 0) 0deg, #F7CAC9 90.68deg, rgba(247, 202, 201, 0.638731) 278.18deg, rgba(247, 202, 201, 0) 360deg);
-    border-radius: 25px;background-size: 200% auto;
+    border-radius: 25px;
+    background-size: 200% auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     transition: .5s;
 }
 
 .msg {
-  font-family: 'Open Sans', sans-serif;
-  margin: 10px 0;
-  padding: 10px;
-  border: 1.5px solid #F7CAC9;
-  border-radius: 7px;
-  text-align: center;
-  font-weight: 550;
-  background:#faeeee
-} 
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1.5px solid #F7CAC9;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: 550;
+    background: #faeeee
+}
 
 button:hover {
     background-position: right center;
 }
-br, label, table, .logo, .button, h1{
+
+br,
+label,
+table,
+.logo,
+.button,
+h1 {
     caret-color: transparent;
 }
