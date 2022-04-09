@@ -30,6 +30,8 @@ function closeForm() {
   <form action="qr.php">
     <a href="inc/logout.php"><img class = "logo" src="img/am.png"></a>
     <fieldset><h1>Введите данные кода вручную</h1></fieldset>
+    <div class="container"></div>
+      <a class="tooltip" button type="button" id="qqq" href="#">Как найти информацию на чеке<span><img src="img/cek.png" /></span></a>
     <form action="">
       <label>Дата и время</label>
       <input type="text" placeholder="Введите наименование">
@@ -41,8 +43,6 @@ function closeForm() {
       <input type="text" placeholder="Обычно 3-5 цифр, в конце чека">
       <label>ФП или ФПД</label>
       <input type="text" placeholder="Обычно 8-10 цифр, в конце чека">
-      <div class="container"></div>
-      <a class="tooltip" button type="button" id="qqq" href="#">Как найти информацию на чеке<span><img src="img/cek.jpeg" /></span></a>
   <!-- <div class="title"><img src="img/cek.jpeg" alt="img"><span>Как найти информацию на чеке</span></div>
   <div class="bottom-text active">
     </div>

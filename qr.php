@@ -4,6 +4,9 @@
         header('Location: index.php');
     }
 ?>
+<?php
+  require_once 'inc/connect.php'
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -37,16 +40,33 @@
       </td>
       </tr>
       <tr><td colspan="3" align="center">
-      <div id="result"></div>
+      <form action = "" method = "get">
+    <div type="text" id="result"name="search"></div>
+    <a href="./info.php" button type = "button" class="button">Найти</button></a></form>
+    <!-- <button href="./info.php" type="button" class="button">Назад</button>  -->
+      <!-- <div id="result"></div> -->
       </td></tr>
       </tbody></table>
       <script async="" src="./js/f.txt"></script>
       </div>&nbsp;
       </div>
-      <canvas id="qr-canvas" width="800" height="600" style="width: 800px; height: 600px;"></canvas>
-      <script type="text/javascript">load();</script>
+      <canvas id="qr-canvas" width="600" height="400" style="width: 600px; height: 400px;"></canvas>
+      <script type="text/javascript">load();</script>     
       <a href="./qqq.php" class="button">Ввнести вручную</button></a>
   </form>
   </div>
 </body>
 </html>
+<?php if(!empty($_GET['search'])){
+      session_start();
+      $search = trim($_GET['search']);
+      $check = mysqli_query($connect, "SELECT * FROM `goods` WHERE `id` = '$search' LIMIT 1");
+      if (mysqli_num_rows($check) > 0) {
+          $obj = mysqli_fetch_assoc($check);
+  
+          $id = $obj['id'];
+          
+          $_SESSION['message'] = 'Товар найден';
+          header("Location: ../info.php?search=$id");
+      }
+} ?>
