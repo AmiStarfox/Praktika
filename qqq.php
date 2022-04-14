@@ -57,7 +57,8 @@ function closeForm() {
         });
     })();
 </script> -->
-<button button type="button" class="button">Внести</button></button>
+<button button type="button" class="button">Внести</button>
+<button href="./qr.php" class="button">Назад</button>
   </form>
   </div>
 </body>

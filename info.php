@@ -39,8 +39,10 @@
     <label>Инвентаризационный номер</label>
     <input type="text" name="number" value="<?= $product['number'] ?>" readonly>
     <label>Количество</label>
-    <input type="number" name="cont" value="<?= $product['cont'] ?>" readonly>
-    <button type="button" href="./qr.php">Назад</button> 
+    <input type="number" name="cont" value="<?= $product['cont'] ?>" readonly></br>
+    <button href="./qr.php" class="button">Назад</button>
+    <!-- <a href="./qr.php" class="button">Назад</button></a>
+    <a href="./qr.php" type="button" class="button">Найти</button></a> -->
     </div></div>
 </body>
 </html>

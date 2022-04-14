@@ -21,52 +21,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
 <body>
   <div class="qr" id="qr">
-  <link rel="stylesheet" href="css/qr.css">
-  <form action="qr.php">
+    <link rel="stylesheet" href="css/qr.css">
     <a href="inc/logout.php"><img class = "logo" src="img/am.png"></a>
     <fieldset><h1>Отсканируйте код с помощью камеры</h1></fieldset>
     <div id="main">
       <div id="mainbody" style="display: inline;">
       <table class="tsel" border="0" width="100%">
-      <tbody><tr>
-      <td valign="top" align="center" width="50%">
-      <table class="tsel" border="0">
-      <tbody><tr>
-      <td><img class="selector" id="webcamimg" src="./img/cam.png" onclick="setwebcam()" align="left" style="opacity: 1;"></td>
-      <td><img class="selector" id="qrimg" src="./img/folder.png" onclick="setimg()" align="right" style="opacity: 0.2;"></td></tr>
-      <tr><td colspan="2" align="center">
-      <div id="outdiv"><video id="v" autoplay=""></video></div></td></tr>
-      </tbody></table>
-      </td>
-      </tr>
-      <tr><td colspan="3" align="center">
-      <form action = "" method = "get">
-    <div type="text" id="result"name="search"></div>
-    <a href="./info.php" button type = "button" class="button">Найти</button></a></form>
-    <!-- <button href="./info.php" type="button" class="button">Назад</button>  -->
-      <!-- <div id="result"></div> -->
-      </td></tr>
-      </tbody></table>
-      <script async="" src="./js/f.txt"></script>
+        <tbody>
+          <tr>
+            <td valign="top" align="center" width="50%">
+              <table class="tsel" border="0">
+                <tbody>
+                  <tr>
+                    <td><img class="selector" id="webcamimg" src="./img/cam.png" onclick="setwebcam()" align="left" style="opacity: 1;"></td>
+                    <td><img class="selector" id="qrimg" src="./img/folder.png" onclick="setimg()" align="right" style="opacity: 0.2;"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" align="center">
+                      <div id="outdiv"><video id="v" autoplay=""></video></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" align="center">
+              <div type="text" id="result"name="search"></div>
+              <a href="info.php" id="button_id"><button style="width: 100%;" class="button">Найти</button></a>
+              <a href="qqq.php"><button style="width: 100%;" class="button">Ввнести вручную</button></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <script async="" src="js/f.txt"></script>
       </div>&nbsp;
-      </div>
-      <canvas id="qr-canvas" width="600" height="400" style="width: 600px; height: 400px;"></canvas>
-      <script type="text/javascript">load();</script>     
-      <a href="./qqq.php" class="button">Ввнести вручную</button></a>
-  </form>
+    </div>
+    <canvas id="qr-canvas" width="600" height="400" style="width: 600px; height: 400px;"></canvas>
+    <script type="text/javascript">load();</script>
   </div>
 </body>
 </html>
-<?php if(!empty($_GET['search'])){
-      session_start();
-      $search = trim($_GET['search']);
-      $check = mysqli_query($connect, "SELECT * FROM `goods` WHERE `id` = '$search' LIMIT 1");
-      if (mysqli_num_rows($check) > 0) {
-          $obj = mysqli_fetch_assoc($check);
-  
-          $id = $obj['id'];
-          
-          $_SESSION['message'] = 'Товар найден';
-          header("Location: ../info.php?search=$id");
-      }
-} ?>
