@@ -16,7 +16,7 @@
 <html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8 " />
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Авторизация</title>
     <link rel="stylesheet" href="css/auth.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,9 +40,7 @@
     <input type="text" name="number" value="<?= $product['number'] ?>" readonly>
     <label>Количество</label>
     <input type="number" name="cont" value="<?= $product['cont'] ?>" readonly></br>
-    <button href="./qr.php" class="button">Назад</button>
-    <!-- <a href="./qr.php" class="button">Назад</button></a>
-    <a href="./qr.php" type="button" class="button">Найти</button></a> -->
+    <a href="qr.php" id="button_id"><button style="width: 90%;" class="button">Назад</button></a>
     </div></div>
 </body>
-</html>
+</html> 

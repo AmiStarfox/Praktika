@@ -11,6 +11,7 @@
 <html lang="ru">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8 " />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Сканирование товара</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="./js/llqrcode.js"></script>
@@ -23,7 +24,7 @@
   <div class="qr" id="qr">
     <link rel="stylesheet" href="css/qr.css">
     <a href="inc/logout.php"><img class = "logo" src="img/am.png"></a>
-    <fieldset><h1>Отсканируйте код с помощью камеры</h1></fieldset>
+  <h1>Отсканируйте код с помощью камеры</h1>
     <div id="main">
       <div id="mainbody" style="display: inline;">
       <table class="tsel" border="0" width="100%">
@@ -49,7 +50,8 @@
             <td colspan="3" align="center">
               <div type="text" id="result"name="search"></div>
               <a href="info.php" id="button_id"><button style="width: 100%;" class="button">Найти</button></a>
-              <a href="qqq.php"><button style="width: 100%;" class="button">Ввнести вручную</button></a>
+              <!-- <a href="qqq.php"><button style="width: 100%;" class="button">Ввнести вручную</button></a> -->
+              <a href="index.php" id="button_id"><button style="width: 100%;" class="button">Выход</button></a>
             </td>
           </tr>
         </tbody>
